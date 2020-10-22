@@ -1,4 +1,5 @@
 require_relative './part_1_solution.rb'
+require "pry"
 
 def apply_coupons(cart, coupons)
   index = 0 
@@ -23,6 +24,7 @@ def apply_coupons(cart, coupons)
     end 
   index += 1 
   end
+  binding.pry
   cart 
 end
 

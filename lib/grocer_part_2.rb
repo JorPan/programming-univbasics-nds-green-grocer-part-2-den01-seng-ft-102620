@@ -1,9 +1,11 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
-  
-  
-  
+  index = 0 
+  while index < coupons.length 
+    cart_item = find_item_by_name_in_collection 
+  index += 1 
+  end
 end
 
 def apply_clearance(cart)

@@ -68,7 +68,14 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
+  counter = 0 
+  while counter < cart.length 
+    if cart[counter][:clearance] == true 
+      cart[counter][:price] *= 0.8 
+    end
   
+  counter += 1 
+  end
 end
 
 def checkout(cart, coupons)
